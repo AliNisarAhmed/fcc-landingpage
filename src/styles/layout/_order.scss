@@ -1,0 +1,63 @@
+.order {
+  grid-column: 2 / 12;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $color-background;
+
+  @include respond(phone) {
+    grid-column: 1 / 13;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    display: inline-block;
+    width: 85%;
+    color: $color-dark;
+    margin-bottom: 4rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  label {
+    color: $color-dark;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  input {
+    outline: none;
+    border: 2px solid $color-dark;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      background-color: $color-dark;
+      color: white;
+    }
+
+    &[type="submit"] {
+      border-radius: 2rem;
+      width: 20rem;
+      color: $color-dark;
+      margin-top: 4rem;
+
+      &:hover,
+      &:active {
+        color: white;
+      }
+    }
+  }
+}

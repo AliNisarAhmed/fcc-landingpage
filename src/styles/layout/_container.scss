@@ -1,0 +1,6 @@
+.container {
+  height: auto;
+  background: $color-dark;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(10, 1fr) 0.5fr;
+}

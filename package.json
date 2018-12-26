@@ -1,0 +1,19 @@
+{
+  "name": "product-landing-page",
+  "version": "1.0.0",
+  "description": "Disclaimer: None of products/Logo shown or assets displayed are owned and/or sold by me, original website https://system76.com/",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "node-sass": "4.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "@types/node-sass": "3.10.32",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

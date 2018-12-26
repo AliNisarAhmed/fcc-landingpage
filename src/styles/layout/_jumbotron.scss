@@ -1,0 +1,57 @@
+.jumbotron {
+  grid-column: 1 / 13;
+  height: 100vh;
+  background: url("https://uploads.codesandbox.io/uploads/user/641e4d73-6370-4576-aaed-734dd3ade4d7/7_nB-surfacefamily.0.png");
+  background-size: 100vw 100vh;
+  background-position: middle;
+  background-repeat: no-repeat;
+  color: $color-dark;
+  position: relative;
+
+  @include respond(phone) {
+    background: $color-background;
+    background-size: 100vw 100vh;
+  }
+
+  &__header {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    transition: 0.2s all;
+
+    @include respond(phone) {
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: 8rem;
+    animation: moveInLeft 0.3s ease-out 0.5s 1 both;
+  }
+
+  &__text--1,
+  &__text--2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__text--1 {
+    animation: moveInLeft 0.3s ease-out 1.25s 1 both;
+    margin-left: 2rem;
+    @include respond(phone) {
+      margin-left: 0;
+    }
+  }
+
+  &__text--2 {
+    animation: moveInLeft 0.3s ease-out 2s 1 both;
+    margin-left: 3rem;
+    @include respond(phone) {
+      margin-left: 0;
+    }
+  }
+}

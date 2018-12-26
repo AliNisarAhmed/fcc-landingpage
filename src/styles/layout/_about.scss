@@ -1,0 +1,50 @@
+#about {
+  grid-column: 2 / 12;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background;
+
+  @include respond(phone) {
+    grid-column: 1 / 13;
+    height: 70vh;
+  }
+
+  iframe {
+    padding: 1rem;
+    width: 60rem;
+    height: 30rem;
+    border-radius: 2rem;
+    border: 5px solid $color-dark;
+
+    @include respond(tab-port) {
+      width: 45rem;
+      height: 30rem;
+    }
+
+    @include respond(phone) {
+      width: 37rem;
+      height: 30rem;
+    }
+  }
+
+  .laptop {
+    margin-top: 2px;
+    border-bottom: 7rem solid $color-dark;
+    border-left: 13rem solid transparent;
+    border-right: 13rem solid transparent;
+    height: 0;
+    width: 85rem;
+    border-radius: 20rem;
+
+    @include respond(tab-port) {
+      width: 70rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}

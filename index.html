@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <section="top">
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a href="#top">
+                <img
+                  src="https://uploads.codesandbox.io/uploads/user/641e4d73-6370-4576-aaed-734dd3ade4d7/bpFT-logo2.png"
+                  id="header-img"
+                />
+              </a>
+            </li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#specs" class="nav-link">Specs</a></li>
+            <li><a href="#order" class="nav-link">Order</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <div class="container">
+      <section class="jumbotron">
+        <div class="jumbotron__header">
+          <h1 class="jumbotron__heading">System<span>76</span></h1>
+          <p class="jumbotron__text--1">for developers</p>
+          <p class="jumbotron__text--2">by developers</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/Nmno-HiChR4"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="laptop"></div>
+      </section>
+
+      <section id="specs" class="specs">
+        <img
+          src="https://uploads.codesandbox.io/uploads/user/641e4d73-6370-4576-aaed-734dd3ade4d7/sxT6-computer_1.png"
+          class="specs__img"
+        />
+        <div class="specs__text">
+          <h1 class="specs__text--heading">Specifications</h1>
+          <ul class="specs__list">
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>OS: Ubuntu 18.04 or Pop!OS
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>8GB+ Memory
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>128GB+ SSD
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>Screen: 15 & 17 inches
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>Nvidia Graphics Card
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>Premiuim Keyboard & Trackpad
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>Aluminum Body
+            </li>
+            <li class="specs__list--item">
+              <i class="far fa-check-circle"></i>2-year warranty*
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="order" class="order">
+        <h3 class="order__heading">
+          Share your email below, & we'll notify you on launch
+        </h3>
+        <form
+          id="form"
+          class="order__form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <label
+            >Name:
+            <input
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label
+            >Email:
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <input id="submit" type="submit" value="Submit" class="btn" />
+        </form>
+      </section>
+    </div>
+
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

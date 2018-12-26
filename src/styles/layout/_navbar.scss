@@ -1,0 +1,46 @@
+#header {
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#nav-bar {
+  ul {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    height: $navbar-height;
+    background: $color-dark;
+    color: $color-light;
+  }
+
+  li:first-child {
+    margin-right: auto;
+  }
+
+  .nav-link {
+    margin-right: 4rem;
+    text-decoration: none;
+    color: $color-light;
+
+    @include respond(phone) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #header-img {
+    box-sizing: content-box;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 1rem solid $color-dark;
+  }
+}
